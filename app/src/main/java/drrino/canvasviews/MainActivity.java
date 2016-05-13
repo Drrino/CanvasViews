@@ -10,7 +10,7 @@ import butterknife.ButterKnife;
 
 public class MainActivity extends AppCompatActivity {
 
-  @Bind(R.id.jump_pie) Button jumpPie;
+  @Bind(R.id.about_canvas) Button jumpPie;
 
   @Override protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
 
     jumpPie.setOnClickListener(new View.OnClickListener() {
       @Override public void onClick(View v) {
-        startActivity(new Intent(MainActivity.this, PieActivity.class));
+        startActivity(new Intent(MainActivity.this, CanvasActivity.class));
       }
     });
   }

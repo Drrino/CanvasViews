@@ -1,4 +1,5 @@
 <resources>
   <string name="app_name">CanvasViews</string>
-  <string name="jump_pie">Pie</string>
+  <string name="about_canvas">画布操作</string>
+  <string name="picture_text">图片文字</string>
 </resources>
