@@ -21,6 +21,7 @@ public class ImageViewActivity extends BaseActivity {
     picture.setOnClickListener(new View.OnClickListener() {
       @Override public void onClick(View v) {
         startActivity(new Intent(ImageViewActivity.this, PathActivity.class));
+        finish();
       }
     });
   }

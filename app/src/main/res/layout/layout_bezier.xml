@@ -5,16 +5,45 @@
     >
 
   <Button
-      android:id="@+id/bezier"
+      android:id="@+id/other"
       android:layout_width="match_parent"
       android:layout_height="70dp"
       android:text="@string/other"
       android:layout_alignParentBottom="true"
       />
 
-  <drrino.canvasviews.ui.weight.BezierViews
+  <RelativeLayout
       android:layout_width="match_parent"
       android:layout_height="match_parent"
-      />
+      android:layout_above="@id/other"
+      >
+    <drrino.canvasviews.ui.weight.BezierViews
+        android:id="@+id/bezier_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        >
+      <RadioButton
+          android:id="@+id/radio_1"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:checked="true"
+          android:text="@string/control_1"
+          />
+      <RadioButton
+          android:id="@+id/radio_2"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/control_2"
+          />
+    </RadioGroup>
+
+  </RelativeLayout>
 
 </RelativeLayout>

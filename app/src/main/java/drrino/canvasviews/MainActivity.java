@@ -10,14 +10,15 @@ import drrino.canvasviews.ui.base.BaseActivity;
 
 public class MainActivity extends BaseActivity {
 
-  @Bind(R.id.about_canvas) Button jumpPie;
+  @Bind(R.id.about_canvas) Button canvas;
 
   @Override protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
 
-    jumpPie.setOnClickListener(new View.OnClickListener() {
+    canvas.setOnClickListener(new View.OnClickListener() {
       @Override public void onClick(View v) {
         startActivity(new Intent(MainActivity.this, CanvasActivity.class));
+        finish();
       }
     });
   }

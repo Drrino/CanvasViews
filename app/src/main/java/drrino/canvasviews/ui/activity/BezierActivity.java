@@ -4,20 +4,38 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.View;
 import android.widget.Button;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import butterknife.Bind;
 import drrino.canvasviews.R;
 import drrino.canvasviews.ui.base.BaseActivity;
+import drrino.canvasviews.ui.weight.BezierViews;
 
 /**
  * Created by Coder on 16/5/14.
  */
 public class BezierActivity extends BaseActivity {
-  @Bind(R.id.bezier) Button bezier;
+  @Bind(R.id.other) Button other;
+  @Bind(R.id.bezier_view) BezierViews bezierView;
+  @Bind(R.id.radio_group) RadioGroup radioGroup;
 
   @Override protected void onCreate(@Nullable Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
 
-    bezier.setOnClickListener(new View.OnClickListener() {
+    radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+      @Override public void onCheckedChanged(RadioGroup group, int checkedId) {
+        switch (checkedId) {
+          case R.id.radio_1:
+            bezierView.setMode(true);
+            break;
+          case R.id.radio_2:
+            bezierView.setMode(false);
+            break;
+        }
+      }
+    });
+
+    other.setOnClickListener(new View.OnClickListener() {
       @Override public void onClick(View v) {
 
       }

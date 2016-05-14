@@ -22,6 +22,7 @@ public class CanvasActivity extends BaseActivity {
     imageText.setOnClickListener(new View.OnClickListener() {
       @Override public void onClick(View v) {
         startActivity(new Intent(CanvasActivity.this,ImageViewActivity.class));
+        finish();
       }
     });
   }

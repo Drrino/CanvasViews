@@ -21,6 +21,7 @@ public class PathActivity extends BaseActivity {
     path.setOnClickListener(new View.OnClickListener() {
       @Override public void onClick(View v) {
         startActivity(new Intent(PathActivity.this, BezierActivity.class));
+        finish();
       }
     });
   }
