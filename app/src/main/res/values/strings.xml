@@ -1,5 +1,8 @@
 <resources>
   <string name="app_name">CanvasViews</string>
-  <string name="about_canvas">画布操作</string>
-  <string name="picture_text">图片文字</string>
+  <string name="about_canvas">跳转_画布操作</string>
+  <string name="picture_text">跳转_图片文字</string>
+  <string name="path">跳转_Path操作</string>
+  <string name="bezier">跳转_贝塞尔曲线</string>
+  <string name="other">跳转_other</string>
 </resources>

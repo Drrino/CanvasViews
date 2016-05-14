@@ -19,8 +19,10 @@
       </intent-filter>
     </activity>
 
-    <activity android:name=".CanvasActivity"/>
-    <activity android:name=".ImageViewActivity"/>
+    <activity android:name=".ui.activity.CanvasActivity"/>
+    <activity android:name=".ui.activity.ImageViewActivity"/>
+    <activity android:name=".ui.activity.PathActivity"/>
+    <activity android:name=".ui.activity.BezierActivity"/>
   </application>
 
 </manifest>

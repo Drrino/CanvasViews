@@ -12,7 +12,7 @@
       android:layout_alignParentBottom="true"
       />
 
-  <drrino.canvasviews.weight.CanvasViews
+  <drrino.canvasviews.ui.weight.CanvasViews
       android:layout_width="match_parent"
       android:layout_height="match_parent"
       android:layout_above="@id/image_text"

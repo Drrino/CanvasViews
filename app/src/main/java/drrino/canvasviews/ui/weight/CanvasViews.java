@@ -1,4 +1,4 @@
-package drrino.canvasviews.weight;
+package drrino.canvasviews.ui.weight;
 
 import android.content.Context;
 import android.graphics.Canvas;
@@ -28,10 +28,10 @@ public class CanvasViews extends View {
     super(context, attrs, defStyleAttr);
   }
 
-  @Override protected void onLayout(boolean changed, int left, int top, int right, int bottom) {
-    super.onLayout(changed, left, top, right, bottom);
-    mWidth = right - left;
-    mHeight = bottom - top;
+  @Override protected void onSizeChanged(int w, int h, int oldw, int oldh) {
+    super.onSizeChanged(w, h, oldw, oldh);
+    mWidth = w;
+    mHeight = h;
   }
 
   @Override protected void onDraw(Canvas canvas) {

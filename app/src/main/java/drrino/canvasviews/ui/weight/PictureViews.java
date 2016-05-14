@@ -1,11 +1,10 @@
-package drrino.canvasviews.weight;
+package drrino.canvasviews.ui.weight;
 
 import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Picture;
-import android.graphics.RectF;
 import android.graphics.drawable.PictureDrawable;
 import android.util.AttributeSet;
 import android.view.View;
