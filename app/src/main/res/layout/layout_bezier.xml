@@ -5,17 +5,17 @@
     >
 
   <Button
-      android:id="@+id/other"
+      android:id="@+id/heart"
       android:layout_width="match_parent"
       android:layout_height="70dp"
-      android:text="@string/other"
+      android:text="@string/heart"
       android:layout_alignParentBottom="true"
       />
 
   <RelativeLayout
       android:layout_width="match_parent"
       android:layout_height="match_parent"
-      android:layout_above="@id/other"
+      android:layout_above="@id/heart"
       >
     <drrino.canvasviews.ui.weight.BezierViews
         android:id="@+id/bezier_view"

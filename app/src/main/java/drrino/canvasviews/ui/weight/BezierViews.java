@@ -38,7 +38,7 @@ public class BezierViews extends View {
     initPointF();
   }
 
-  protected void setMode(boolean mode) {
+  public void setMode(boolean mode) {
     this.mode = mode;
   }
 

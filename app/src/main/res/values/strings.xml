@@ -5,6 +5,7 @@
   <string name="path">跳转_Path操作</string>
   <string name="bezier">跳转_贝塞尔曲线</string>
   <string name="other">跳转_other</string>
+  <string name="heart">跳转_heart</string>
   <string name="control_1">控制点1</string>
   <string name="control_2">控制点2</string>
 </resources>
